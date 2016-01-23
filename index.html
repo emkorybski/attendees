@@ -9,84 +9,114 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style type="text/css">
+        .lname, .modal-close {
+            cursor: pointer
+        }
+        .pagination {
+            display: none
+        }
+        #ind_info img {
+            float: left;
+            margin-top:5px;
+            margin-right: 20px;
+            clear:both;
+        }
+        #ind_info p {
+            margin-left: 0px;
+            overflow:auto;
+            display:block;
+
+        }
+    </style>
+
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Enjoy!</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Enjoy!</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-
-      <h1 class="header center orange-text">WS Attendees</h1>
-
-
+      <h1 class="header center orange-text">Attendees</h1>
     </div>
   </div>
 
-
   <div class="container">
-
+      <div class="progress center-align">
+          <div class="indeterminate" style="width: 70%"></div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="ind_info" class="modal">
+          <div class="modal-content">
+              <h4></h4>
+              <img width='160' height='160' />
+              <p id="title"></p>
+              <p id="company"></p>
+              <p id="country"></p>
+              <p id="interests"></p>
+              <p id="bio"></p>
+          </div>
+          <div class="modal-footer">
+              <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+      </div>
       <table>
           <thead>
           <tr>
-              <th data-field="id">Name</th>
-              <th data-field="name">Item Name</th>
-              <th data-field="price">Item Price</th>
+              <th data-field="id"></th>
+              <th data-field="name">Name</th>
+              <th data-field="price">Title</th>
+              <th data-field="name">Company</th>
+              <th data-field="price">Country</th>
+              <th data-field="price">Interests</th>
           </tr>
           </thead>
-
-          <tbody>
-          <tr>
-              <td>Alvin</td>
-              <td>Eclair</td>
-              <td>$0.87</td>
-          </tr>
-          <tr>
-              <td>Alan</td>
-              <td>Jellybean</td>
-              <td>$3.76</td>
-          </tr>
-          <tr>
-              <td>Jonathan</td>
-              <td>Lollipop</td>
-              <td>$7.00</td>
-          </tr>
+          <!-- below element populated dynamically -->
+          <tbody id="results">
           </tbody>
       </table>
+      <div class="row center-align">
+          <ul class="pagination">
 
+              <li class="active"><a id="uno" href="index.html">1</a></li>
+              <li><a id="duo" data-target="2" href="#2">2</a></li>
+              <li><a id="tre" data-target="3" href="#3">3</a></li>
+              <li><a id="qua" data-target="4" href="#4">4</a></li>
 
+          </ul>
+      </div>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+    <div class="container" style="border-top: 1px solid #ccc">
+      <div class="row center-align">
+        <div class="col l6 s8">
+          <h5 class="black-text">Comments</h5>
+          <p class="black-text text-lighten-4">Clicking on the name link should invoke popup.</p>
+          <p class="black-text text-lighten-4">Basic implementation of inifinite scroll should be working.</p>
         </div>
+          <div class="col l6 s8">
+              <h5 class="black-text">TODOs</h5>
+              <p class="black-text text-lighten-4">Use jTemplates to handle page content population.</p>
+              <p class="black-text text-lighten-4">Refine display on small screens.</p>
+          </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Adapted by <a class="orange-text text-lighten-3" href="http://materializecss.com">Michal Korybski</a>
-      </div>
-    </div>
-  </footer>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <!--  Scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/materialize.js"></script>
+
 
   </body>
 </html>

@@ -11,10 +11,9 @@ Created using Slim PHP micro-framework for the API part and Materialize CSS UI l
 
 
 ### Install
-
-You may install the Slim Framework with Composer (recommended) or manually.
-
-[Read how to install Slim](http://docs.slimframework.com/#Installation)
+Grab the .zip or clone repository in your web server root.
+Development has been done on Windows machine with IIS but there is .htaccess set up for Apache too.
+Hopefully line endings will not be a problem.
 
 ### System Requirements
 
