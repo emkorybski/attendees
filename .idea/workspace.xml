@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453564252108" ignored="false" />
     <file path="/Dummy.txt" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453545173357" ignored="false" />
-    <file path="/README.markdown" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453581829627" ignored="false" />
+    <file path="/README.markdown" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453582007082" ignored="false" />
     <file path="/index.html" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453580586740" ignored="false" />
     <file path="/style.css" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453415284455" ignored="false" />
     <file path="/init.js" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453581017284" ignored="false" />
@@ -65,7 +65,7 @@
       <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="518" selection-end="518" vertical-scroll-proportion="0.2723112">
+            <state line="14" column="1" selection-start="484" selection-end="484" vertical-scroll-proportion="0.2723112">
               <folding />
             </state>
           </provider>
@@ -478,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="518" selection-end="518" vertical-scroll-proportion="0.2723112">
+        <state line="14" column="1" selection-start="484" selection-end="484" vertical-scroll-proportion="0.2723112">
           <folding />
         </state>
       </provider>

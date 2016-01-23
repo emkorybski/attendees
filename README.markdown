@@ -9,10 +9,10 @@ Created using Slim PHP micro-framework for the API part and Materialize CSS UI l
 * It also returns details for each attendee, e.g /attendees/9649
 * Pagination remains a TODO
 
-## Couple of screen grabs
-http://screencast.com/t/zlCsRmIArNB
-http://screencast.com/t/K8s1u0ofdHp
-http://screencast.com/t/bxTb9Knf0f2
+## A few screen grabs
+* http://screencast.com/t/zlCsRmIArNB
+* http://screencast.com/t/K8s1u0ofdHp
+* http://screencast.com/t/bxTb9Knf0f2
 
 
 ### Install
