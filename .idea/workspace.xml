@@ -4,16 +4,12 @@
     <list default="true" id="060daa15-9226-4150-b8e4-b8485f824a9d" name="Default" comment="">
       <change type="DELETED" beforePath="C:\inetpub\wwwroot\ws\LICENSE" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/init.js" afterPath="$PROJECT_DIR$/js/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BCT.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453564252108" ignored="false" />
     <file path="/Dummy.txt" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453545173357" ignored="false" />
-    <file path="/README.markdown" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453576219773" ignored="false" />
+    <file path="/README.markdown" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453581829627" ignored="false" />
     <file path="/index.html" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453580586740" ignored="false" />
     <file path="/style.css" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453415284455" ignored="false" />
     <file path="/init.js" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453581017284" ignored="false" />
@@ -36,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="17" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.29834905">
+            <state line="50" column="17" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-9.730769">
               <folding />
             </state>
           </provider>
@@ -66,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="45" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+            <state line="14" column="35" selection-start="518" selection-end="518" vertical-scroll-proportion="0.2723112">
               <folding />
             </state>
           </provider>
@@ -105,9 +101,9 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/micro_t.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/README.markdown" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/init.js" />
+        <option value="$PROJECT_DIR$/README.markdown" />
       </list>
     </option>
   </component>
@@ -456,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="54" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-9.076923">
@@ -482,7 +471,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.29834905">
+        <state line="50" column="17" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-9.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="518" selection-end="518" vertical-scroll-proportion="0.2723112">
           <folding />
         </state>
       </provider>
