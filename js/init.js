@@ -25,7 +25,7 @@
                       "<td>" + data[k][4] + "</td>" +
                       "<td>" + data[k][5] + "</td>" +
                       "<td>" + data[k][3] + "</td>" +
-                      "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                      "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "").replace('&', 'and') + "</td></tr>");
               }
           }
       }).done(function() {
@@ -55,7 +55,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "").replace('&', 'and') + "</td></tr>");
                           }
                       }
                       break;
@@ -70,7 +70,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "").replace('&', 'and') + "</td></tr>");
                           }
                       }
                       break;
@@ -85,7 +85,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "").replace('&', 'and') + "</td></tr>");
                           }
                       }
                       break;
@@ -110,7 +110,7 @@
                 $("#title").html("<b>Title:</b> " + idata[4]);
                 $("#company").html("<b>Company:</b> " + idata[5]);
                 $("#country").html("<b>Country:</b> "+ idata[3]);
-                $("#interests").html("<b>Interests:</b> " + idata[8].replace("{", "").replace("}", ""));
+                $("#interests").html("<b>Interests:</b> " + idata[8].replace("{", "").replace("}", "").replace('&', 'and'));
                 $("#bio").html("<b>1-sentence bio:</b> " + idata[7]);
 
             }).done(function() {

@@ -91,7 +91,8 @@ $app->get('/interests', function () use ($app) {
     for($i = 1; $i < 101; $i++)
     {
         $no_brackets = str_replace(array( '{', '}' ), '', $cached_attendees[$i][8]);
-        $no_quotes = str_replace('"', '', $no_brackets);
+        $no_end = str_replace('&', 'and', $no_brackets);
+        $no_quotes = str_replace('"', '', $no_end);
         $interests_raw = explode(",", $no_quotes);
         foreach($interests_raw as $interest){
             if (!in_array($interest, $interests)) {
