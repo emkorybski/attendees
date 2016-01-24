@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="060daa15-9226-4150-b8e4-b8485f824a9d" name="Default" comment="">
       <change type="DELETED" beforePath="C:\inetpub\wwwroot\ws\LICENSE" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.markdown" afterPath="$PROJECT_DIR$/README.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/init.js" afterPath="$PROJECT_DIR$/js/init.js" />
     </list>
     <ignored path="BCT.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453639815530" ignored="false" />
     <file path="/Dummy.txt" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453638876864" ignored="false" />
     <file path="/README.markdown" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453649511634" ignored="false" />
-    <file path="/index.html" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453648767012" ignored="false" />
+    <file path="/index.html" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453662271845" ignored="false" />
     <file path="/style.css" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453415284455" ignored="false" />
     <file path="/init.js" changelist="060daa15-9226-4150-b8e4-b8485f824a9d" time="1453647771865" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +36,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="47" selection-start="229" selection-end="229" vertical-scroll-proportion="28.115385">
+            <state line="12" column="47" selection-start="229" selection-end="229" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -44,27 +45,28 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="117" selection-start="4477" selection-end="4477" vertical-scroll-proportion="-16.923077">
+            <state line="82" column="73" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-16.26923">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="35" selection-start="763" selection-end="763" vertical-scroll-proportion="0.33066362">
+            <state line="16" column="35" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="init.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="17" selection-start="6518" selection-end="6518" vertical-scroll-proportion="0.0">
+            <state line="3" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="0.058352403">
               <folding />
             </state>
           </provider>
@@ -91,9 +93,9 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/micro_t.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/init.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.markdown" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/init.js" />
       </list>
     </option>
   </component>
@@ -387,6 +389,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="51" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -455,32 +458,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="229" selection-end="229" vertical-scroll-proportion="28.115385">
+        <state line="16" column="35" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/init.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="17" selection-start="6518" selection-end="6518" vertical-scroll-proportion="0.0">
+        <state line="12" column="47" selection-start="229" selection-end="229" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="117" selection-start="4477" selection-end="4477" vertical-scroll-proportion="-16.923077">
+        <state line="82" column="73" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-16.26923">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.markdown">
+    <entry file="file://$PROJECT_DIR$/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="763" selection-end="763" vertical-scroll-proportion="0.33066362">
+        <state line="3" column="6" selection-start="37" selection-end="37" vertical-scroll-proportion="0.058352403">
           <folding />
         </state>
       </provider>

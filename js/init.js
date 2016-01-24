@@ -1,7 +1,16 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+      $('.button-collapse').sideNav();
+
+      // populate interests dropdown
+      $.getJSON("http://localhost/ws/interests", function( interests ) {
+          $.each( interests, function( index, value ) {
+              $("#interest-list").append("<li><a>" + value + "</a></li>");
+          });
+      }).done(function() {
+              $('#ld').hide('fast');
+          });
 
       // 1st page results
       $.getJSON( "http://localhost/ws/attendees", function( data ) {
@@ -22,7 +31,7 @@
       }).done(function() {
               $('.progress').hide('fast');
               $('.pagination').show('fast');
-      });
+            });
 
       // all remaining results pages
       $('.pagination li a').on("click", function(){
@@ -109,19 +118,6 @@
                     $('#ind_info').openModal();
                 });
         });
-
-      // populate interests dropdown
-      $("#sort").on("click", function(evt){
-          evt.preventDefault();
-
-          $.getJSON("http://localhost/ws/interests", function( interests ) {
-              $.each( interests, function( index, value ) {
-                  $("#interest-list").append("<li><a>" + value + "</a></li>");
-              });
-          }).done(function() {
-                  $('#ld').hide('fast');
-              });
-      });
 
       // interleave rows by interest
       $(document).on("click", "#interest-list a", function(evt){
