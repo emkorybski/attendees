@@ -7,7 +7,8 @@ Created using Slim PHP micro-framework for the API part and Materialize CSS UI l
 * The API is RESTful and returns results in JSON format
 * The API has an endpoint to return a list of all conference attendees, using /attendees
 * It also returns details for each attendee, e.g /attendees/9649
-* Pagination remains a TODO
+* Pagination implemented
+* BONUS: Interleaving results by interest implemented, they get highlighted at the top of results listing. There is an API endpoint /interests/ to return list of interests to populated dropdown of a UI control
 
 ## A few screen grabs
 * http://screencast.com/t/zlCsRmIArNB
@@ -17,6 +18,7 @@ Created using Slim PHP micro-framework for the API part and Materialize CSS UI l
 
 ### Install
 Grab the .zip or clone repository in your web server root.
+You can put it alongside your other projects - this is what I did, accessing the app UI with localhost/attendees/index.html, where /attendees part of the URL path is also the name of your folder in server root.
 Development has been done on Windows machine with IIS but there is .htaccess set up for Apache too.
 Hopefully line endings will not be a problem.
 
@@ -27,36 +29,7 @@ New, standards-supporting browser such as Chrome or Opera.
 
 
 ### Setup your web server
+If you are using Wordpress then I presume your Apache has mod_rewrite module enabled or your IIS has url_rewrite module installed.
+Necessary respective `.htaccess` or `Web.config` files are already present in the project folder.
 
-#### Apache
-
-Ensure the `.htaccess` and `index.php` files are in the same public-accessible directory. The `.htaccess` file
-should contain this code:
-
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [QSA,L]
-
-
-#### IIS
-
-Ensure the `Web.config` and `index.php` files are in the same public-accessible directory. The `Web.config` file should contain this code:
-
-    <?xml version="1.0" encoding="UTF-8"?>
-    <configuration>
-        <system.webServer>
-            <rewrite>
-                <rules>
-                    <rule name="slim" patternSyntax="Wildcard">
-                        <match url="*" />
-                        <conditions>
-                            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-                            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-                        </conditions>
-                        <action type="Rewrite" url="index.php" />
-                    </rule>
-                </rules>
-            </rewrite>
-        </system.webServer>
-    </configuration>
 
