@@ -14,10 +14,9 @@
                       "<td>" + data[k][4] + "</td>" +
                       "<td>" + data[k][5] + "</td>" +
                       "<td>" + data[k][3] + "</td>" +
-                      "<td>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                      "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
               }
           }
-
       }).done(function() {
               $('.progress').hide('fast');
               $('.pagination').show('fast');
@@ -32,7 +31,6 @@
           $(this).parent().addClass('active');
           $.getJSON( "http://localhost/ws/attendees/pg/" + page_num, function( data ) {
 
-
               var results = document.getElementById("results");
               switch (page_num) {
                   case 2:
@@ -46,7 +44,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
                           }
                       }
                       break;
@@ -61,7 +59,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
                           }
                       }
                       break;
@@ -76,7 +74,7 @@
                                   "<td>" + data[k][4] + "</td>" +
                                   "<td>" + data[k][5] + "</td>" +
                                   "<td>" + data[k][3] + "</td>" +
-                                  "<td>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
+                                  "<td class='interests'>" + data[k][8].replace("{", "").replace("}", "") + "</td></tr>");
                           }
                       }
                       break;
@@ -109,8 +107,44 @@
                     $('#ind_info').openModal();
                 });
         });
+      // populate interests dropdown
+      $("#sort").on("click", function(evt){
+          evt.preventDefault();
 
+          $.getJSON("http://localhost/ws/interests", function( interests ) {
+              $.each( interests, function( index, value ) {
+                  $("#interest-list").append("<li><a>" + value + "</a></li>");
+              });
+          }).done(function() {
+                  $('#ld').hide('fast');
+              });
+      });
+      // interleave rows by interest
+      $(document).on("click", "#interest-list a", function(evt){
 
+          evt.preventDefault();
+          var nu_order = [];
+          var row_collection = $("tr");
+          var intr = $(this).html();
+          console.log(intr);
+          $(row_collection).each(function(){
+              var int_phrase = $(this).find("td.interests").text();
+              console.log(int_phrase);
+                if(int_phrase.indexOf(intr) > -1){
+                    // pop this row from this collection and add it to the nu_order
+                    console.log("pop-ready");
+                    var node_klon = $(this).clone();
+                    $(this).remove();
+                    nu_order.push(node_klon);
+                    $(nu_order).each(function(){
+                        $(this).addClass("teal lighten-5");
+                        $(results).prepend($(this));
+                    });
+                }
+          });
+      });
+
+      // amend pagination hashing
       $(window).on('load', function(){
           window.location.hash = '1';
       });

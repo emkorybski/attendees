@@ -35,11 +35,11 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Enjoy!</a></li>
+        <li><a>Enjoy!</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Enjoy!</a></li>
+        <li><a>Enjoy!</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -69,6 +69,27 @@
               <a class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
           </div>
       </div>
+      <!-- Dropdown Trigger -->
+      <div class="right-align">
+        <a id="sort" class='dropdown-button btn' href='#' data-activates='interest-list'>Sort by Interest</a>
+      </div>
+      <!-- Dropdown Structure -->
+      <ul id='interest-list' class='dropdown-content'>
+          <li id="ld">
+              <div class="preloader-wrapper small active">
+                  <div class="spinner-layer spinner-green-only">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div><div class="gap-patch">
+                      <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+                  </div>
+              </div>
+          </li>
+      </ul>
+
       <table>
           <thead>
           <tr>

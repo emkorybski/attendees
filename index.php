@@ -7,7 +7,7 @@ require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim();
-//$app->contentType('application/json');
+$app->contentType('application/json');
 
 $app->get('/attendees', function () use ($app){
 
@@ -70,8 +70,7 @@ $app->get('/attendees/pg/:no', function ($no) use ($app){
     }
 
     echo json_encode($pgcsv);
-    //print "<pre/>";
-    //print_r($csv);
+
 });
 
 $app->get('/attendees/:id', function ($id) use ($app) {
@@ -85,6 +84,25 @@ $app->get('/attendees/:id', function ($id) use ($app) {
         }
 
     }
+});
+
+$app->get('/interests', function () use ($app) {
+    $cached_attendees = $_SESSION['attendees'];
+    $interests = array();
+
+    for($i = 1; $i < 101; $i++)
+    {
+        $no_brackets = str_replace(array( '{', '}' ), '', $cached_attendees[$i][8]);
+        $no_quotes = str_replace('"', '', $no_brackets);
+        $interests_raw = explode(",", $no_quotes);
+        foreach($interests_raw as $interest){
+            if (!in_array($interest, $interests)) {
+                $interests[] = $interest;
+            }
+        }
+
+    }
+    echo json_encode($interests);
 });
 
 $app->run();
