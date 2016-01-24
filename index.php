@@ -9,9 +9,8 @@ require 'Slim/Slim.php';
 $app = new \Slim\Slim();
 $app->contentType('application/json');
 
+// return 1st page of results
 $app->get('/attendees', function () use ($app){
-
-    header('Access-Control-Allow-Origin: http://localhost');
 
     $ccsv = array_map('str_getcsv', file('sample_data.csv'));
 
@@ -26,21 +25,21 @@ $app->get('/attendees', function () use ($app){
     }
     fclose($scsv);
 
+    // remove CSV table headings
     unset($lcsv[0]);
 
+    // cache results in a 'Session' superglobal
     $_SESSION['attendees'] = $ccsv;
 
     echo json_encode($lcsv);
 });
 
+// return paginated results for page 2, 3 and 4
 $app->get('/attendees/pg/:no', function ($no) use ($app){
-
-    header('Access-Control-Allow-Origin: http://localhost');
 
     $maxLines = 101;
     $csv = $_SESSION['attendees'];
     $pgcsv = array();
-
 
     switch ($no) {
         case 2:
@@ -68,11 +67,10 @@ $app->get('/attendees/pg/:no', function ($no) use ($app){
             }
             break;
     }
-
     echo json_encode($pgcsv);
-
 });
 
+// return individual record
 $app->get('/attendees/:id', function ($id) use ($app) {
     $cached_attendees = $_SESSION['attendees'];
 
@@ -82,10 +80,10 @@ $app->get('/attendees/:id', function ($id) use ($app) {
         if($cached_attendees[$i][0] == $id){
             echo json_encode($cached_attendees[$i]);
         }
-
     }
 });
 
+// return list of interests
 $app->get('/interests', function () use ($app) {
     $cached_attendees = $_SESSION['attendees'];
     $interests = array();

@@ -1,6 +1,8 @@
 (function($){
   $(function(){
+
     $('.button-collapse').sideNav();
+
       // 1st page results
       $.getJSON( "http://localhost/ws/attendees", function( data ) {
 
@@ -22,7 +24,7 @@
               $('.pagination').show('fast');
       });
 
-      // all remaining pages
+      // all remaining results pages
       $('.pagination li a').on("click", function(){
           $('.pagination li a').each(function(){
               $(this).parent().removeClass('active');
@@ -85,7 +87,7 @@
                   $('.pagination').show('fast');
               });
       });
-
+        // make 'Name' clickable
         $(document).on("click", "a.lname", function(evt){
             evt.preventDefault();
             var ilink = $(this).data("link");
@@ -107,6 +109,7 @@
                     $('#ind_info').openModal();
                 });
         });
+
       // populate interests dropdown
       $("#sort").on("click", function(evt){
           evt.preventDefault();
@@ -119,20 +122,23 @@
                   $('#ld').hide('fast');
               });
       });
+
       // interleave rows by interest
       $(document).on("click", "#interest-list a", function(evt){
-
           evt.preventDefault();
+
           var nu_order = [];
           var row_collection = $("tr");
+
           var intr = $(this).html();
-          console.log(intr);
+
           $(row_collection).each(function(){
-              var int_phrase = $(this).find("td.interests").text();
-              console.log(int_phrase);
+                var int_phrase = $(this).find("td.interests").text();
+                if($(this).hasClass("teal lighten-5")){
+                    $(this).removeClass("teal lighten-5");
+                }
                 if(int_phrase.indexOf(intr) > -1){
                     // pop this row from this collection and add it to the nu_order
-                    console.log("pop-ready");
                     var node_klon = $(this).clone();
                     $(this).remove();
                     nu_order.push(node_klon);
