@@ -9,7 +9,6 @@ Development has been done on Windows machine with IIS but there is `.htaccess` s
 Hopefully line endings will not be a problem.
 
 ## Features
-* Access the UI e.g. like so (I assume the most basic server setup with no virtual hosts configured): `localhost/attendees/index.html`
 * The API is RESTful and returns results in JSON format
 * The API has an endpoint to return a list of all conference attendees, using `localhsot/attendees/attendees`
 * It also returns details for each attendee, e.g `localhost/attendees/attendees/9649`
