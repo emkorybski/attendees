@@ -10,7 +10,7 @@ Hopefully line endings will not be a problem.
 
 ## Features
 * The API is RESTful and returns results in JSON format
-* The API has an endpoint to return a list of all conference attendees, using `localhsot/attendees/attendees`
+* The API has an endpoint to return a list of all conference attendees, using `localhost/attendees/attendees`
 * It also returns details for each attendee, e.g `localhost/attendees/attendees/9649`
 * Pagination implemented
 * BONUS: Interleaving results by interest implemented, they get highlighted at the top of results listing. There is an API endpoint `localhost/attendees/interests/` to return list of interests to populated dropdown of a UI control
