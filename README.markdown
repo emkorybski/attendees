@@ -2,26 +2,25 @@
 
 Created using Slim PHP micro-framework for the API part and Materialize CSS UI library for the API-consuming page.
 
-## Features
+### Install
+Grab the .zip or clone repository in your web server root.
+You can put it alongside your other projects - this is what I did, accessing the app UI with `localhost/attendees/index.html`, where `/attendees` part of the URL path corresponds to the name of your folder in server root.
+Development has been done on Windows machine with IIS but there is `.htaccess` set up for Apache too.
+Hopefully line endings will not be a problem.
 
+## Features
+* Access the UI e.g. like so (I assume the most basic server setup with no virtual hosts configured): `localhost/attendees/index.html`
 * The API is RESTful and returns results in JSON format
-* The API has an endpoint to return a list of all conference attendees, using /attendees
-* It also returns details for each attendee, e.g /attendees/9649
+* The API has an endpoint to return a list of all conference attendees, using `localhsot/attendees/attendees`
+* It also returns details for each attendee, e.g `localhost/attendees/attendees/9649`
 * Pagination implemented
-* BONUS: Interleaving results by interest implemented, they get highlighted at the top of results listing. There is an API endpoint /interests/ to return list of interests to populated dropdown of a UI control
+* BONUS: Interleaving results by interest implemented, they get highlighted at the top of results listing. There is an API endpoint `localhost/attendees/interests/` to return list of interests to populated dropdown of a UI control
 
 ## A few screen grabs
 * http://screencast.com/t/zlCsRmIArNB
 * http://screencast.com/t/K8s1u0ofdHp
 * http://screencast.com/t/bxTb9Knf0f2
 * http://screencast.com/t/8oaC3DMxH
-
-
-### Install
-Grab the .zip or clone repository in your web server root.
-You can put it alongside your other projects - this is what I did, accessing the app UI with localhost/attendees/index.html, where /attendees part of the URL path is also the name of your folder in server root.
-Development has been done on Windows machine with IIS but there is .htaccess set up for Apache too.
-Hopefully line endings will not be a problem.
 
 ### System Requirements
 
