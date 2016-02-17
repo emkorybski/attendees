@@ -2,7 +2,7 @@
 
 Created using Slim PHP micro-framework for the API part and Materialize CSS UI library for the API-consuming page.
 
-### Install
+### Quick install
 Grab the .zip or clone repository in your web server root.
 You can put it alongside your other projects - this is what I did, accessing the app UI with `localhost/attendees/index.html`, where `/attendees` part of the URL path corresponds to the name of your folder in server root.
 Development has been done on Windows machine with IIS but there is `.htaccess` set up for Apache too.
@@ -21,7 +21,7 @@ Hopefully line endings will not be a problem.
 * http://screencast.com/t/bxTb9Knf0f2
 * http://screencast.com/t/8oaC3DMxH
 
-### System Requirements
+### System requirements
 
 You need **PHP >= 5.3.0**.
 New, standards-supporting browser such as Chrome or Opera.
