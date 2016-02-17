@@ -28,7 +28,7 @@ New, standards-supporting browser such as Chrome or Opera.
 
 
 ### Setup your web server
-If you are using Wordpress then I presume your Apache has mod_rewrite module enabled or your IIS has url_rewrite module installed.
+If you are using Wordpress then I presume your Apache has `mod_rewrite` module enabled or your IIS has `url_rewrite` module installed.
 Necessary respective `.htaccess` or `Web.config` files are already present in the project folder.
 
 
